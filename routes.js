@@ -11,7 +11,7 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'templates/home.template.html'
+                templateUrl: 'home.template.html'
             })
             .state('categories', {
                 url: '/categories',
@@ -25,7 +25,7 @@
             })
             .state('items', {
                 url: '/categories/{categoryShortName}',
-                templateUrl: 'templates/items.template.html',
+                templateUrl: 'items.template.html',
                 controller: 'itemsController as itemsCtrl',
                 params: {
                     categoryShortName: null,
